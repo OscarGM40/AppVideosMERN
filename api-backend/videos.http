@@ -1,0 +1,29 @@
+@api = http://localhost:3000
+
+GET {{api}}/videos
+
+###
+GET {{api}}/videos/5f952e5aec0ace33d4944830
+
+###
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url":"https://www.youtube.com/watch?v=kFIvslQQZ9k&list=PLU8oAlHdN5Blq85GIxtKjIXdfHPksV_Hm",
+    "title":"video random",
+    "description": "video random ultra random"
+}
+
+###
+PUT {{api}}/videos/5f952e5aec0ace33d4944830
+Content-Type: application/json
+
+{
+    "title":"titulo cambiado 3"
+}
+
+###
+DELETE {{api}}/videos/5f94812057936669287f42c2
+
+
